@@ -12,7 +12,6 @@ const RateLimitOptions = {
 function rateLimit(options) {
     return async (req, res, next) => {
         const key = `rateLimit:${req.query.userId || req.ip}`;
-        console.log(key);
         let current = await redis.incr(key);
         // Set headers in any case
         if (options.headers) {

@@ -62,6 +62,8 @@ curl http://127.0.0.1:8080/test2
 ## bench test
     python3 -m locust -f benchMark.py
 
+> if you want to test more user,pls modify benchMark.py line 4 the number
+
 ## open browser
     http://0.0.0.0:8089 
 

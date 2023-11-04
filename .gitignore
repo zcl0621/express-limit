@@ -1,0 +1,25 @@
+# 忽略node_modules目录
+node_modules/
+
+# 忽略构建产物
+dist/
+build/
+
+# 忽略日志文件
+*.log
+
+# 忽略临时文件
+*.tmp
+
+# 忽略IDE和编辑器生成的文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 忽略敏感信息配置文件
+config.js
+.env
+
+# 忽略运行时生成的文件
+public/uploads/

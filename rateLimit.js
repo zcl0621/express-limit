@@ -1,6 +1,6 @@
 const express = require('express');
 const Redis = require('ioredis');
-const redis = new Redis({host: '127.0.0.1',port:6379}); // Configure this with your Redis connection details
+const redis = new Redis({host: 'redis.orb.local'}); // Configure this with your Redis connection details
 const RateLimitOptions = {
     windowMs: 0,
     max: 0,

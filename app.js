@@ -1,10 +1,9 @@
 var express = require('express');
 var logger = require('morgan');
 var rateLimit = require('./rateLimit');
-var zaddLimit = require('./zaddLimit')
 var app = express();
-const limiter = zaddLimit({
-    windowMs: 5 * 60 * 1000, // 15 minutes
+const limiter = rateLimit({
+    windowMs: 1 * 60 * 1000, // 15 minutes
     max: 60, // limit each IP to 100 requests per windowMs
     statusCode: 500, // status to send when rate limit is exceeded
     message: "Too many requests, please try again later.",
